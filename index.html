@@ -1,4 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .flex{
+            /*基本样式*/
+            width:100%;
+            height:250px;
+            border: 1px solid #555;
+            font: 14px "Microsoft Sans Serif";
+            /* 建立弹性框 */
+            display:-webkit-flex;
+            -webkit-flex-direction:row;
+
+            display: flex;
+            flex-direction: row;
+        }
+        .flex > div {
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+            width:30px;
+            -webkit-transition: width 0.7s ease-out;
+            transition: width 0.7s ease-out;
+        }
+        .flex > div:hover{
+            width: 200px;
+        }
+    </style>
+</head>
 <body>
-	<div>我是hotfix分支</div>
-	<h1>这是一个新功能</h1>
+<div class="flex">
+    <div style="background:aqua">one</div>
+    <div style="background:blue">two</div>
+    <div style="background:yellowgreen">three</div>
+</div>
+
+<script>
+    Promise.resolve()
+    .then(() => {
+        console.log(1);
+        return new Error('error!!!');
+    })
+    .then((res) => {
+        console.log(2);
+        console.log('then:', res);
+    })
+    .then((err) => {
+        console.log(3);
+        console.log('catch:', err);
+    })
+</script>
 </body>
+</html>
