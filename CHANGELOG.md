@@ -9,6 +9,7 @@
 
 ### Features
 
+* **flex:** flex布局和Premise ([5a2eae0](https://github.com/Jasonwang911/justForGitTest/commit/5a2eae0))
 * **Header:** 添加Header模块的标题头 ([2d7540f](https://github.com/Jasonwang911/justForGitTest/commit/2d7540f))
 
 
