@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		padding: 0;
+		margin:0;
+	}
+	.text-center{
+		width:200px;
+		height:100px;
+		text-align: center;
+		color: #fff;
+		background: #f45;
+	}
+	.img-center{
+		width: 500px;
+		height: 400px;
+		margin: 0 auto;
+		background: aqua;
+		position: relative;
+	}
+	.img-center img{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.block-center{
+		width: 500px;
+		height: 400px;
+		background: aqua;
+		position: relative;
+	}
+	.block-center div{
+		width: 200px;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		background: red;
+		/*margin-left: auto;
+		margin-right: auto;*/
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#alertBox{
+		display: none;
+		position: fixed;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		background: #ccc;
+	}
+	#alertBox div {
+		width: 400px;
+		height: 200px;
+		background: aqua;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#alertBox div h4{
+		height: 160px;
+		line-height: 160px;
+	}
+	</style>
+</head>
+<body>
+	<button id="alertOpen">打开弹窗</button>
+	<div class="text-center">水平居中</div>
+	<div class="img-center">
+		<img src="img/logo.png" alt="">
+	</div>
+	<div class="block-center">
+		<div>块级元素水平居中</div>
+	</div>
+	<div id="alertBox">
+		<div>
+			<h4>弹窗弹啊弹</h4>
+			<button id="alertClose">关闭</button>
+		</div>
+	</div>
+
+	<script>
+		alertOpen.onclick = function() {
+			alertBox.style.display = 'block';
+		}
+		alertClose.onclick = function() {
+			alertBox.style.display = 'none';
+		}
+	</script>
+</body>
+</html>
