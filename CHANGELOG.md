@@ -1,5 +1,5 @@
 <a name="1.0.0"></a>
-# 1.0.0 (2018-04-11)
+# 1.0.0 (2018-04-12)
 
 
 ### Bug Fixes
@@ -9,6 +9,7 @@
 
 ### Features
 
+* **css:** css居中总结 ([6381b3a](https://github.com/Jasonwang911/justForGitTest/commit/6381b3a))
 * **flex:** flex布局和Premise ([5a2eae0](https://github.com/Jasonwang911/justForGitTest/commit/5a2eae0))
 * **Header:** 添加Header模块的标题头 ([2d7540f](https://github.com/Jasonwang911/justForGitTest/commit/2d7540f))
 
